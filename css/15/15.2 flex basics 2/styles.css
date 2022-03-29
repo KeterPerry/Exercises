@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.flex {
+  margin: auto;
+  background-color: antiquewhite;
+  width: 700px;
+  height: 350px;
+  display: flex;
+  margin-top: 100px;
+  justify-content: end;
+  align-items: flex-end;
+}
+.boxes {
+  background-color: black;
+  width: 100px;
+  height: 100px;
+}
+#box1 {
+  background-color: green;
+}
+#box2 {
+  background-color: blue;
+}
+#box3 {
+  background-color: red;
+}

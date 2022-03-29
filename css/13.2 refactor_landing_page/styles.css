@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* max-width: 960px; */
+}
+
+header {
+  height: 15vh;
+  background-color: black;
+}
+header ul {
+  float: left;
+}
+header ul li {
+  display: inline-block;
+  margin: 20px;
+}
+header ul li a {
+  text-decoration: none;
+  color: aliceblue;
+}
+header ul li a:hover {
+  color: beige;
+}
+
+.section {
+  /* background-image: url("my picture.jpg"); */
+}
+p {
+  float: right;
+  width: 400px;
+  height: 400px;
+  padding: 20px;
+  text-align: center;
+}
+h1 {
+  margin: 0;
+  width: 100px;
+  height: 100px;
+}
+.clr {
+  clear: both;
+}
+.image {
+  width: 40%;
+  height: 300px;
+}

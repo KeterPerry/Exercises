@@ -1,0 +1,56 @@
+
+body{
+  background-color: azure;
+  max-width: 960px;
+  box-sizing: border-box;
+  
+}
+.clr{
+  clear: both;
+}
+ 
+
+#mainhead {
+ text-align: center;
+ font-family:'hurricane', cursive;
+ font-size: 50px;
+}
+
+.enhance{
+color: yellow;
+background-color:black; 
+
+}
+.name_pro{
+  width:30%;
+  float:left;
+}
+
+.my_image {
+
+width: 50%;
+height: px;
+border: 1px solid;
+padding: 10px;
+float: right;
+}
+
+p {
+font-size: 150%;
+color:black;
+}
+
+#footer {
+  background-color: beige;
+  width: 100px;
+  height: 100px;
+  
+}
+
+/* .card {
+background-color: antiquewhite;
+width: 400px;
+height: 600px;
+} */
+
+

@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: black;
+  height: 30vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+header li {
+  margin: 15px;
+  flex: 1;
+}
+#title1 {
+  margin: 15px 500px 15px 20px;
+  font-size: 25px;
+}
+
+header a {
+  text-decoration: none;
+  color: aliceblue;
+}
+header ul li a:hover {
+  color: beige;
+}
+@media (max-width: 500px) {
+  header {
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+  }
+  header li {
+    margin: 0 0;
+  }
+  #title1 {
+    margin-right: 80px;
+  }
+}

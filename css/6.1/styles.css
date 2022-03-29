@@ -1,0 +1,16 @@
+div h3 {
+    font-size: 300%;
+    border: 2px solid red;
+    border-radius: 25px;
+}
+div h4 {
+    font-style: italic;
+    font-weight:bold;
+
+}
+div h5 {
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: black;
+    text-shadow: 2px 2px;
+}

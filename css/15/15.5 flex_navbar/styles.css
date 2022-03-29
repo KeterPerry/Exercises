@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: black;
+  height: 30vh;
+}
+header ul {
+  display: flex;
+  justify-content: flex-end;
+}
+header ul li {
+  margin: 10px;
+}
+h2 {
+  position: absolute;
+  top: 40px;
+  left: 27px;
+}
+
+header a {
+  text-decoration: none;
+  color: aliceblue;
+}
+header ul li a:hover {
+  color: beige;
+}
+@media (max-width: 600px) {
+  header {
+    height: 100vh;
+  }
+  header ul {
+    margin-top: 40px;
+    flex-direction: column;
+    align-items: center;
+  }
+  h2 {
+    text-align: center;
+    margin-left: 80px;
+  }
+}

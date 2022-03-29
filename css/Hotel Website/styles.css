@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: rgb(173, 100, 100);
+  position: relative;
+}
+
+.container {
+  position: relative;
+  margin: auto;
+  background-color: black;
+  max-width: 400px;
+}
+
+.navbar {
+  position: absolute;
+  right: 10px;
+  margin: 20px 20px;
+  padding: 20px 20px;
+  background-color: rgb(39, 109, 109);
+}
+.navbar li {
+  display: inline;
+  margin: 15px;
+}
+.navbar li:hover {
+  background-color: azure;
+}
+.navbar a {
+  text-decoration: none;
+  color: white;
+}
+.navbar a:hover {
+  background-color: ;
+  color: bisque;
+}
+
+.hbt {
+  position: absolute;
+  left: 30px;
+  color: white;
+  top: 40px;
+  font-weight: bold;
+}
+.image {
+  width: 20px;
+  height: 20px;
+}
+.section {
+  background-color: aquamarine;
+  position: relative;
+  top: 100px;
+}
+
+.enjoy {
+  position: absolute;
+  top: 50px;
+  font-size: 50px;
+  font-weight: bold;
+  right: ;
+  color: azure;
+
+.p {
+  position: absolute;
+  top: 60px;
+  color: white;
+  right: 20px;
+}
+h3{
+  color: azure;
+}
+.boxl{
+  width: 300px;
+  height: 300px;
+  background-color: aqua;
+  color: white;
+
+}
+.boxr{
+  background-color: bisque;
+}
