@@ -1,0 +1,14 @@
+span[data-descr] {
+  position: relative;
+  color: green;
+  cursor: pointer;
+}
+/* } describes the words */
+
+span[data-descr]:hover::after {
+  content: attr(data-descr);
+  position: absolute;
+  background-color: yellow;
+  border-radius: 1px;
+  padding: 15px;
+}
