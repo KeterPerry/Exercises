@@ -1,0 +1,19 @@
+.box {
+  background-color: red;
+  width: 100px;
+  height: 100px;
+  position: relative;
+}
+.box:after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  transform: translateX(100px);
+  /* transition-timing-function: ease-in; */
+}
+.box:hover::after {
+  background-color: blue;
+  transform: translateX(0px);
+}

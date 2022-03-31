@@ -13,18 +13,19 @@ body {
  
 }
 
-#mainhead {
-  text-align: center;
-  font-family: "hurricane", cursive;
-  font-size: 50px;
-}
+
 
 .about_me { 
+  position: -webkit -sticky;
+  position: sticky;
+  top: 0;
+  font-size: 20px;
   display: flex;
   justify-content: flex-start;
   list-style: none;
   background-color: var(--primary-color);
- 
+  
+
   
 }
 
@@ -44,7 +45,11 @@ body {
   }
 }
 
-
+#mainhead {
+  text-align: center;
+  font-family: "hurricane", cursive;
+  font-size: 50px;
+}
 .enhance {
   color: yellow;
   background-color: black;
