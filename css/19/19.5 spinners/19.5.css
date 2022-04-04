@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+  flex-wrap: wrap;
+}
+
+.box-2 {
+  position: relative;
+  width: 20px;
+  height: 200px;
+  border-color: azure;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  background-color: transparent;
+  padding: 10px 100px;
+  margin: 50px;
+  font-size: large;
+  opacity: 0;
+}
+
+.box-2::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100px;
+  top: -5px;
+  left: 0;
+  border: 2px solid turquoise;
+  border-radius: 50%;
+  animation: animate 10s forwards ease-in-out;
+}
+
+@keyframes animate {
+  0% {
+    top: -5px;
+    left: 0;
+  }
+  25% {
+    top: -5px;
+    right: 0;
+  }
+  50% {
+    top: -5px;
+    right: 0;
+  }
+  100% {
+    top: -5px;
+    left: 0;
+  }
+}
