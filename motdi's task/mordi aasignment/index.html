@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        background-color: purple;
+        height: 20vh;
+        width: 100%;
+        position: fixed;
+        z-index: 1;
+
+    }
+
+    .navul {
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+
+    }
+
+    .navul li a {
+        text-decoration: none;
+        color: black;
+        margin: 20px 20px;
+
+
+
+    }
+
+    main {
+        position: absolute;
+        top: 30vh;
+        display: flex;
+        flex-direction: column;
+        /* margin: auto; //not working */
+        border: 1px solid black;
+        padding-left: 400px;
+        padding-right: 400px;
+        height: 80vh;
+        width: 100%;
+
+
+
+
+    }
+
+    h1 {
+
+        color: blueviolet;
+        text-decoration: underline;
+        text-align: center;
+    }
+
+    h4 {
+        text-decoration: underline;
+    }
+
+    p {
+        background-color: blueviolet;
+
+    }
+
+    .grid {
+        /* not working */
+        position: absolute;
+        top: 120vh;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        border: 1px solid black;
+        text-align: center;
+
+
+    }
+
+    .box {
+        width: 80px;
+        height: 100px;
+        border: 1px solid white;
+        background-color: green;
+    }
+
+    @media (max-width: 768px) {
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+</style>
+
+<body>
+
+    <nav class="navbar">
+        <ul class="navul">
+            <li><a href="#"> Home </a></li>
+            <li><a href="#"> Home </a></li>
+            <li><a href="#"> Home </a></li>
+        </ul>
+
+    </nav>
+
+    <main>
+        <h1> Welcome Home</h1>
+
+        <h4> put your name here</h4>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Molestiae est quis sunt incidunt nihil veritatis,
+            neque, facere sed asperiores reprehenderit
+            hic fuga at cumque exercitationem
+            officiis
+            necessitatibus enim
+            sapiente. Beatae!</p>
+
+        <br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab porro illum voluptatem repudiandae eum quod iusto
+            ullam amet. Animi laboriosam aliquam consequuntur esse autem laudantium molestias similique, numquam earum,
+            veritatis minus, ducimus nam. Sequi, vitae ratione rem possimus ea eveniet veniam mollitia unde consectetur
+            dolor nihil iure incidunt voluptas illum, quo doloremque tempora quisquam deserunt aliquid! Cum consequuntur
+            quaerat distinctio repellat dolorem, culpa doloremque tenetur perspiciatis numquam labore quibusdam quo
+            iusto
+            nostrum laborum, illum explicabo placeat. At ratione ad ut rem repudiandae aperiam quo eius atque, nesciunt
+            eligendi officia quaerat voluptate pariatur illo hic dicta magnam ipsam assumenda animi! Saepe?</p>
+
+    </main>
+    <section class="grid">
+        <div class="box1 box "></div>
+        <div class="box2 box"></div>
+        <div class="box3 box"></div>
+        <div class="box4 box"></div>
+        <div class="box5 box"></div>
+        <div class="box6 box"></div>
+        <div class="box7 box"></div>
+        <div class="box8 box"></div>
+    </section>
+
+
+</body>
+
+
+</html>

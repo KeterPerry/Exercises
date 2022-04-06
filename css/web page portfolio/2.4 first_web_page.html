@@ -9,9 +9,89 @@
     <link href="<link rel=" preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Hurricane&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e62187107e.js" crossorigin="anonymous"></script>
     <title>About Me</title>
 
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            --max-width: 800px;
+            --primary-color: steelblue;
+            --secondary-color: lightblue;
+            --light-color: white;
+        }
 
+        body {
+            background-color: var(--secondary-color);
+            padding: 30px;
+
+        }
+
+        #mainhead {
+            text-align: center;
+            font-family: "hurricane", cursive;
+            font-size: 50px;
+        }
+
+        .about_me {
+            display: flex;
+            justify-content: flex-start;
+            list-style: none;
+            background-color: var(--primary-color);
+
+
+        }
+
+        .about_me li {
+            margin: 10px
+        }
+
+        .about_me button {
+
+            background-color: transparent;
+            border: 0;
+            font-size: 18px;
+        }
+
+        .about_me li button:hover {
+            color: bisque;
+            background-color: azure;
+        }
+
+
+
+        /* .enhance {
+            color: yellow;
+
+            background-color: black;
+        } */
+
+        p {
+            font-size: 150%;
+            color: black;
+        }
+
+        footer {
+            width: 100px;
+            height: 100px;
+        }
+
+        footer a {
+            text-decoration: none;
+        }
+
+
+        /* footer {
+            width: 6rem;
+            height: 2rem;
+        } */
+
+        .twitter .youtube .facebook {
+            font-size: 3rem;
+        }
+    </style>
 </head>
 
 <body>
@@ -25,16 +105,13 @@
         </header>
         <br>
 
-
-
-
-
         <div id="mainhead">
             <h1>About Me</h1>
         </div>
         <div id="subhead">
             <h2>Keter Perry</h2>
             <h3><i>a programmer</i></h3>
+            <br>
             <img src="./my picture.jpg" alt="a picture of myself" width="250px">
 
         </div>
@@ -49,35 +126,35 @@
             I have a master degree in English lingustics from Ben Gurion University.
             Until not long ago, I have been teaching English for 5 point students and
             also lecturing. However, I have recently decided to have a change in career and embark
-            on a new journey and that is <span class="enhance"> programming</span>. I'm mainly intersted in Back end
+            on a new journey and that is <i>programming</i>. I'm mainly intersted in Back end
             development positions and would
             love starting my own company/strat-up which will hopefully assist people with their daily needs.
         </p>
     </div>
 
-    <div id="footer">
+    <footer>
         <h5>Follow me on:</h5>
-        <a href="https://facebook.com/keterperi" class="link_to_facebook">
+        <br>
+        <!-- <a href="https://facebook.com/keterperi" class="link_to_facebook">
             <ion-icon name="logo-facebook"></ion-icon>
         </a>
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script> -->
 
-        <!-- <div class="card"> 
-
-    
-    <img src ="https://upload.wikimedia.org/wikipedia/commons/a/ac/Golan_Heights_-_Gamla_view.jpg" alt="The Golan Heights" class="The_Golan_Heights">
-    
-
-    <div class="part_2">
-        <h6>Follow Me on:</h6>
-        <button type="button">Click Me!</button
-         
-    </div> -->
+        <a href="https://facebook.com/keterperi" class="facebook">
+            <i class="fa-brands fa-facebook"></i>
+        </a>
+        <a href="#" class="twitter">
+            <i class="fa-brands fa-twitter"></i>
+        </a>
+        <a href="#" class="youtube">
+            <i class="fa-brands fa-youtube-square"></i>
+        </a>
 
 
-
-    </div>
+        <!-- <ion-icon name="logo-youtube"></ion-icon> -->
+        </div>
+    </footer>
 
 
 </body>

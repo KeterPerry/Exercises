@@ -1,0 +1,26 @@
+.container{
+    margin: 50px 50px;
+    display: grid;
+    grid-template-columns: repeat(8, 50px);
+    grid-template-rows: repeat(7, 50px);
+    /* grid-template-areas:
+    'item1 item2 item3 item4 item5'
+    'item6 item7 item8 item9 item10'
+    'item11 item12 item13 item14' */
+
+}
+.items{
+ width: 100%;
+ height:100%;
+ object-fit: cover;
+}
+
+.item1{
+  
+ grid-column: 1/ span 3;
+} 
+
+.item2{
+    
+} 
+

@@ -1,0 +1,39 @@
+.grid{
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    /* grid-template-rows: repeat(3,2fr); */
+   
+
+}
+.boxes{
+    padding: 3rem;
+    border: 1px solid white;
+    background-color: green;
+    
+}
+.box1{
+    background-color: blue ;
+    grid-column:1/ span 2;
+    /* grid-column: 1/ span 2; */
+}
+.box2{
+    background-color: green ;
+    grid-column:3 /span 2  ;
+}
+.box3{
+    background-color:yellow;
+    
+}
+.box4{
+    background-color:  red;
+    grid-column:2 /span 3  ;
+    /* grid-column: 1/ span 4; */
+
+   
+}
+.box5{
+    background-color: pink ;
+    grid-column:1 /span 4  ;
+}
+
+
