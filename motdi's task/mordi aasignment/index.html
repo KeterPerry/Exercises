@@ -43,16 +43,18 @@
     }
 
     main {
-        position: absolute;
-        top: 30vh;
+        /* position: absolute;
+        top: 30vh; */
+        padding-top: 30vh;
         display: flex;
         flex-direction: column;
         /* margin: auto; //not working */
         border: 1px solid black;
         padding-left: 400px;
         padding-right: 400px;
-        height: 80vh;
+        /* height: 80vh; */
         width: 100%;
+        align-items: center;
 
 
 
@@ -75,17 +77,25 @@
 
     }
 
+    .grid-father {
+        padding: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
     .grid {
-        /* not working */
-        position: absolute;
-        top: 120vh;
+
+        /* position: absolute;
+        top: 120vh; */
+
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         border: 1px solid black;
         text-align: center;
-
-
+        gap: 1rem;
     }
+
 
     .box {
         width: 80px;
@@ -136,17 +146,22 @@
             nostrum laborum, illum explicabo placeat. At ratione ad ut rem repudiandae aperiam quo eius atque, nesciunt
             eligendi officia quaerat voluptate pariatur illo hic dicta magnam ipsam assumenda animi! Saepe?</p>
 
+
+
     </main>
-    <section class="grid">
-        <div class="box1 box "></div>
-        <div class="box2 box"></div>
-        <div class="box3 box"></div>
-        <div class="box4 box"></div>
-        <div class="box5 box"></div>
-        <div class="box6 box"></div>
-        <div class="box7 box"></div>
-        <div class="box8 box"></div>
-    </section>
+    <div class="grid-father">
+
+        <section class="grid">
+            <div class="box1 box "></div>
+            <div class="box2 box"></div>
+            <div class="box3 box"></div>
+            <div class="box4 box"></div>
+            <div class="box5 box"></div>
+            <div class="box6 box"></div>
+            <div class="box7 box"></div>
+            <div class="box8 box"></div>
+        </section>
+    </div>
 
 
 </body>
