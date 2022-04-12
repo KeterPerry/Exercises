@@ -1,27 +1,37 @@
 
 
 
-let arr=  Array(100).fill({name:'same'});
+ 
+ const arr=  Array(100).fill({name:'same'});
 console.log( arr);
 
+const fieldArr= Array (100). fill({name:Ari});
 
-let arr2= Array.from({length: 100}, (_, i) => i + 1);
+
+
+let arr2= Array.from({length: 100}, (e, i) => i + 1);
 
 
 //=> [1, 2, 3, 4, 5, 6, 7, 8, 9, 10...]
 
 
 /*Convert only values of an object into one array.*/
-let values= Object.values(obj);
+
+
+const obj= {val:1, val2: 2};
+console.log (Object.values(obj));
 
 
 /* Convert an array into one object*/
 let array1= ['a','b','c'];
+const obj;
 
-Object.assign({}, ['a','b','c']);
+console.log(Object.assign({obj}, ['a','b','c']);
+const obj2={ ...array1};
 
 
 
+Array.isArray(obj);
 Array.isArray(array1);
 
 /*Create a copy of an array that won’t effect the original
