@@ -1,13 +1,13 @@
 
 let myvar='hello';
 
-function isString (string, func)
+function isString (string, func)    // const isString =(string, callback)=>
  {
-    if  (typeof myvar === 'string')
+    if  (typeof string === 'string')
           func(string);
 }
 
-function func (string) {
+function func (string) {    //const func=()=>
     console.log(string);
     }
 
