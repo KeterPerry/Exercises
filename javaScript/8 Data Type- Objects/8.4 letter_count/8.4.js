@@ -6,9 +6,6 @@ const array = ["Hello", "Good Day", "Your Welcome", "hotdog",
 
 
 
-console.log(array[1].length);
-countLetter(array);
-
 function countLetter(array){
 
     let obj= {};
@@ -47,7 +44,7 @@ function countLetter(array){
     }
 
     
-     console.log(obj); 
+     console.log(array);
 
 }
 // array.join('').toLowerCase().split('')       // obj.array[i][j]= obj.array[i][j] + 1 || 1;
