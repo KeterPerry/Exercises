@@ -1,14 +1,14 @@
 
-// const arr=[ 1, 5, 9, 8];
+const arr=[ 1, 5, 9, 8];
 
-// const max = arr.reduce((max, curval)=> {
-//     if (curval > max) return curval;
-//     else
-//     return max;
+const max = arr.reduce((max, curval)=> {
+    if (curval > max) return curval;
+    else
+    return max;
     
-// });
+});
 
-// console.log(max);
+console.log(max);
 
 ////////////////////////////////////////////////////////////////////////
 const arr1= [1,5,9,8,2,10];
@@ -33,20 +33,20 @@ function sumOfEven(arr){
     console.log(sumOfEven(arr1));
 ///////////////////////////////////////////////////////////
 
-// const arr2=[ 1, 5, 9, 8, 2, 10];
-// let sum=0;
+const arr2=[ 1, 5, 9, 8, 2, 10];
+let sum=0;
 
-// function average(arr){
+function average(arr){
 
-// const average= arr2.reduce((total, curval)=> {
-//     return total+curval;
+const average= arr2.reduce((total, curval)=> {
+    return total+curval;
 
-// });
+});
 
-//  return average/arr2.length;
-// }
+ return average/arr2.length;
+}
 
-// console.log(average (arr2));
+console.log(average (arr2));
 // /////////////////////////////////////////////////////
 
 
