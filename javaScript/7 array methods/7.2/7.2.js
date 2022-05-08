@@ -1,16 +1,36 @@
 const string = "The more you know, the more you know that you don't know";
+const arr =string.split("");
+let counter=0;
 
+const arr =string.split("");
+let counter=0;
 
-let arr =string.split("");
+console.log(arr.length);
 
-console.log(arr);
+function getLastY(arr){
 
-const index = [];
-const element = 'y';
-let ioe = arr.indexOf(element);
-while (ioe != -1) {
-  index.push(ioe);
-  ioe= arr.indexOf(element, ioe + 1);
+for (let i = arr.length-1;  arr.length>0 ; i--){
+     counter++
+     if (arr[i]==='y')
+     return arr.length - counter;
 }
-console.log(index);
-// [0, 2, 4]
+}
+
+console.log(getLastY(arr));
+//////////////////////////////////////////////////////////////////////////////////////using insexof
+
+const string = "The more you know, the more you know that you don't know";
+const arr =string.split("");
+const reverse= arr.reverse();
+console.log(arr.length);
+console.log(reverse);
+
+function getLastY(arr){
+ index= reverse.indexOf("y");
+ console.log(index);
+ return arr.length - (index+1);
+
+}
+
+
+console.log(getLastY(arr));

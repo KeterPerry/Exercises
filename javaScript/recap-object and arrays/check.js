@@ -630,36 +630,56 @@ const carMarket = {
 
 ///////////////////////////////////////////////////////////////////////////////
 
+// carMarket.setNewCarToAgency= function (agencyId) {
 
+//   const agency= this.sellers.find(e=> e.agencyId==agencyId)
 
-// carMarket.getAllCustomerCars= function (id){
- 
-//   const customer= this.customers.find((e)=> e.id===id)
+//   const carobj={
+//     name: "4",
+//     year: 2015,
+//     price: 157000,
+//     carNumber: "AZJZ5",
+//     ownerId: "Plrq5M5AZ",
+//     }
 
-//   const carName= customer.cars.map((e)=>e.name)
+//   if (agency){
+//     for (let brand of agency.cars){
+//         brand.models.push(carobj);
+//       }
+//     }
+//     return models;
 
-//   return carName;
-   
+  
+
 // }
 
-// console.log(carMarket.getAllCustomerCars("FQvNsEwLZ"));
+// console.log(carMarket.setNewCarToAgency("Plyq5M5AZ"))
 
+//* setNewCarToAgency
+//? @param {string} - id of agency
+//? @param {object} - carObject
+//? @return {}
 
-//////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////
 
-carMarket.getCustomerCash= function (id){
- 
-  const customer= this.customers.find((e)=> e.id===id)
+carMarket.deleteCarFromAgency= function (agencyId, carNum) {
 
- 
+  const agency= this.sellers.find(e=> e.agencyId==agencyId)
 
-  return customer.cash;
    
+  for( let i=0; i<agency.cars.length; i++)
+  {
+    if (agency.cars[i].carNum===carNum)
+       return agency.cars.splice(i,1);
+       
+    
+  }
 }
 
-console.log(carMarket.getCustomerCash("FQvNsEwLZ"));
+  console.log(carMarket.setNewCarToAgency("Plyq5M5AZ", "AZJZ4"));
 
-
-//* getCustomerCash
-//? @param {id} - costumerId - costumer id
-//? @return {number} - CustomerCash
+//* 
+//? @param {string} - id of agency
+//? @para// ? @return {}
+// m {string} -  Car id
+///////////////////////////////////////////////////////////////////////////

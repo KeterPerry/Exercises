@@ -22,6 +22,8 @@ const div = document.createElement('div');
 body.appendChild(div);
 
 button.addEventListener('click', (event) => {
+    
+    
     const val = input.value;
     const valInt = parseInt(val);
 
@@ -29,15 +31,19 @@ button.addEventListener('click', (event) => {
         alert("Error- Please enter a number");
     }
     else {
+           div.innerHTML = "";
+          
         for (let i = 0; i < val; i++) {
             const img = document.createElement('img');
             img.src = "./smiley1.png"
             div.appendChild(img);
         }
+          
+        
     }
 
-    // setTimeout(() => {console.log("this is the third message")}, 1000);
-    // div.style.display = "none";
+
+
 
 });
 
