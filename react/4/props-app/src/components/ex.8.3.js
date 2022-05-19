@@ -8,30 +8,25 @@ class ChangeColor extends React.Component {
    
 
 componentDidMount=()=> {
+    
     this.setState({color: this.state.array[this.state.count]});
+    console.log("bla");
     
 }
   
   
 componentDidUpdate = () => {
-    if (this.state.count===5)
+    // 
      //notworking
-   { setTimeout(()=>this.setState({count:this.state.count +1 ,color: this.state.array[this.state.count]}),500)
-    console.log (this.state.count);}
-    // else if (this.state.count===5)
-    //  this.setState({borderRadius: "150"}) 
+     
+     setTimeout(()=>this.setState({count:this.state.count +1 ,color: this.state.array[this.state.count]}),500)
+     if (this.state.count===5){
+     setTimeout(()=>this.setState({borderRadius: "50%"}),500)  
+   }
 
 }
     
-    // if (this.state.count ===4) this.setState({count: 0})
-    //  this.setState({count: this.state.count+1})
-    //  console.log("bla");
-    //  this.setState({color: this.state.array[this.state.count]});
-    //  this.setState({borderRadius: "50%"});
-
-    // for(let i=0; i<array.length; i++){
-    //     setTimeout(() => {this.setState({color: array[i], count: this.state.count+1});
-    // }, "500")}  }
+   
     
     
 

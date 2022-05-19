@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+// import './components/ex.9 spinner
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 

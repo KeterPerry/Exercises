@@ -1,5 +1,6 @@
 
-import './App.css';
+// import './App.css';
+
 import React from 'react'
 // import ExerciseButtons from './components/ex4.1'
 // import ExerciseCards from './components/ex4.2'
@@ -10,8 +11,11 @@ import React from 'react'
 // import  CounterUpAndDown from './components/ex.7.3'
 // import  Color from './components/ex8.1'
 // import  Slides from './components/ex8.2'
-import ChangeColor from './components/ex.8.3'
-// import Loading from './components/ex.9 spinner/spinner.js'
+// import ChangeColor from './components/ex.8.3'
+import Loading from './components/ex.9 spinner/spinner.js'
+// import ButtonParent from './components/ex11.1/buttons'
+// import CheckBoxParent from './components/ex11.2'
+// import MyForm from './components/ex.11.3'
 
 
 
@@ -27,8 +31,11 @@ class App extends React.Component {
     // <CounterUpAndDown/> 
     // <Color/>
     // <Slides/>
-    <ChangeColor/>
-    // <Loading />
+    // <ChangeColor/>
+    <Loading />
+    // <ButtonParent/>
+    // <CheckBoxParent/>
+    // <MyForm/>
 
    
     )
