@@ -6,29 +6,37 @@ class Loading extends React.Component {
  
  state = {counter:0, data:null};
    
-//  componentDidMount = () => {
-//     //  this.setState({data:"bla"});
+ componentDidMount = () => {
+   setTimeout(()=>this.setState({count:this.state.count +1}),2000)
+   console.log (this.state.counter);  
+ }
 
-   
-//  }
     
-// componentDidUpdate = (prev) => {
-//     if( prev.state.counter!==10)
-//     setInterval(() => {                          
-//     this.setState({counter: prev.state.counter+1});    
-//     }, 1000);
-    
-// }
-      
-// this.state.counter<10 && this.state.data===null
+componentDidUpdate = (prev) => {
+console.log(this.state.counter);
+if( this.state.counter<10)
+{
+    // setTimeout(()=>this.setState({counter:10}),4000)
+    setTimeout(this.setState({counter: this.state.counter+1}),2000);
+    // setInterval(this.setState((prevState)=>{return {count:prevState.count +1}},2000));
+    // this.setState((prevState) => {
+    //     return {
+    //       giveSpinner: this.state.spinnerArr[this.state.counter],
+    //     };
+    //   });
+  
+}
+}
     render() {
-        return (   
-            // if (this.state.counter<10 && this.state.data=null)
-            <div className="container">
-                <h3>this.state.data</h3>
+        if (this.state.counter<10){
+        return (     
+            <div className="container" style={{display:"flex", gap:50, justifyContent:"center", alignItems: "center"}}>
+               <Spinner message="Loading"/>
+               <Spinner message="Loading"/>
                <Spinner message="Loading"/>
            </div> 
         )
+        }
     }
 }
 
@@ -41,7 +49,8 @@ const Spinner =(props) =>{
 </div>
     );
 };
-Spinner.defaultProps={
-    message: 'Loading...'
-}
+// Spinner.defaultProps={
+//     message: 'Loading...'
+// }
 
+// this.state.counter<10 && this.state.data===null
