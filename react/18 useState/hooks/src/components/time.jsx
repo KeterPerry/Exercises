@@ -6,16 +6,14 @@ export default function Time() {
   const [inputMin, setInputMin] = useState(0)
   const [inputHours, setInputHours] = useState(0)
 
-  // function handleInputChange(event) {
-  //   setInputTime({ [event.target.name]: event.target.value });
-  // }
-  // handleInputChange1=(event)=>{
-  //   setInputHours(event.target.)
-
+  function handleInputChange(event) {
+    setInputTime({ [event.target.name]: event.target.value });
   }
-  handleInputChange2
-  handleInputChange3
+  handleInputChange1=(event)=>{
+    setInputHours(event.target.)
 
+  
+ 
 
   return (
     <div>
