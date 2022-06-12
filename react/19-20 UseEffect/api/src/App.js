@@ -1,7 +1,7 @@
 import logo from "./logo.svg";
 import "./App.css";
 // import StarWars from "./components/ex19.1";
-// import Countries from "./components/ex.19.2";
+import Countries from "./components/ex.19.2";
 // import Algoria from "./components/ex.19.3";
 import ChuckNorrisRefactor from "./components/ex.19.4";
 import CancelRequest from "./components/ex.20.1";
@@ -13,7 +13,7 @@ function App() {
   return (
     <div>
       {/* <StarWars /> */}
-      {/* <Countries /> */}
+      <Countries />
       {/* <Algoria /> */}
       {/* <ChuckNorrisRefactor /> */}
       {/* <CancelRequest /> */}

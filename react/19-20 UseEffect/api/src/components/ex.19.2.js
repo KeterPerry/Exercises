@@ -14,10 +14,8 @@ function Countries() {
           return element.name.common.includes(input);
         });
         if (input) {
-          console.log("x");
           setCountries(filtered);
         } else {
-          console.log("y");
           setCountries(data);
         }
         // console.log(countries);
