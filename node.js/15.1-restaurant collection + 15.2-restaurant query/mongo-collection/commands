@@ -1,0 +1,50 @@
+use findMyRestaurant
+db.restaurants.insertMany();
+db.restaurants.find({ isKosher: true });
+db.restaurants.find({ "address.city": "Ashkelon" }).pretty();
+db.restaurants.find({ "address.street": "Marom" }).pretty();
+db.restaurants.find({ "address.coordinates": [-72, 664, 41.677] }).pretty();
+db.restaurants.find().sort({ name: 1 });
+db.restaurants.find().sort({ "address.city": 1 });
+db.restaurants.updateOne(
+  { _id: ObjectId("62af18bfac925beb9d13fac2") },
+  { $set: { name: "BonApetit" } }
+);
+db.restaurants.updateOne(
+  { _id: ObjectId("62af18bfac925beb9d13fac2") },
+  { $push: { reviews: { date: "14.1.2002", score: 77 } } }
+);
+db.restaurants.updateMany({}, { $set: { isKosher: true } });
+db.restaurants.deleteOne({ _id: ObjectId("62af18bfac925beb9d13fac2") });
+db.restaurants.deleteMany({ isKosher: true });
+////////////////////////////////////////////////////////////////////////////////////////////////
+db.restaurants
+  .find()
+  .forEach((res) => printjson(`the restaurant name is ${res.name}`));
+db.restaurants
+  .find()
+  .forEach((res) => printjson(`the restaurant name is ${res.address.city}`));
+db.restaurants
+  .find()
+  .forEach((res) =>
+    printjson(`the restaurant name is ${res.address.coordinates}`)
+  );
+//////////////////////////////////////////////////////////////////////////////////////////////////
+
+db.restaurants.find({ name: /^A/ });
+db.restaurants.find().count();
+db.restaurants
+  .find()
+  .forEach((res) => res.reviews.find((rev) => rev.date === "14.5.2020"));
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+db.restaurants.find().forEach((res) =>
+  res.reviews.forEach((rev) => {
+    $avg: $rev.score;
+  })
+);
+db.restaurants.find({ name: "pizza" }).forEach((res) =>
+  res.reviews.forEach((rev) => {
+    $avg: $rev.score;
+  })
+);
